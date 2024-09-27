@@ -5,6 +5,21 @@ package main
 //Save is one variable
 //return
 
-func main() {
+import (
+	"fmt"
+)
 
+func main() {
+	var number int
+
+	fmt.Println("Enter a number: ")
+	fmt.Scanln(&number)
+	fmt.Printf("You typed: %d\n", number)
+
+	if number < 0 {
+		fmt.Printf("The Number negativ is: %d", number)
+	} else {
+		number *= -1
+		fmt.Printf("The negativ number is: %d", number)
+	}
 }
